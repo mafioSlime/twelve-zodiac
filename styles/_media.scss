@@ -5,6 +5,11 @@
     grid-gap: 2rem;
     align-items: center;
 
+    &:nth-child(2) {
+      .card-img {
+        order: 2;
+      }
+    }
   }
 
 }

@@ -8,6 +8,8 @@
 body {
   background-color: #eaeaea;
   color: #333;
+  overflow-x: hidden;
+  margin: auto;
 }
 
 li {
@@ -118,11 +120,75 @@ header a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .card:nth-child(2) .card-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @media (min-width: 1000px) {
   .main-content {
     max-width: 80%;
   }
+}
+
+.option-container {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  background-color: purple;
+  padding: 0.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0 auto 0.5rem;
+  display: block;
+  width: 140px;
+}
+
+select {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.zodiac-container {
+  margin: 3rem auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.zodiac-container img {
+  border: 2px solid gold;
+  margin-bottom: 2rem;
+}
+
+.zodiac-container .zodiac-traits {
+  margin-bottom: 2rem;
+}
+
+.zodiac-container .zodiac-traits p {
+  font-size: 1.2rem;
+}
+
+.zodiac-personality p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.zodiac-name {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.zodiac-name::first-letter {
+  font-size: 2.2rem;
+  color: purple;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,8 @@
 body {
   background-color: #eaeaea;
   color: #333;
+  overflow-x: hidden;
+  margin: auto;
 }
 
 li {
@@ -29,3 +31,4 @@ img {
 @import "header";
 @import "main";
 @import "media";
+@import "horoscope";
