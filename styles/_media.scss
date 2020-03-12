@@ -1,3 +1,31 @@
+@media(min-width: 500px) {
+  .zodiac-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .zodiac-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  .zodiac-stats {
+    p {
+      line-height: 3.2;
+    }
+  }
+}
+
+
 @media (min-width: 900px) {
   .card {
     display: grid;
