@@ -1,0 +1,17 @@
+@media (min-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .main-content {
+    max-width: 80%;
+  }
+
+}
