@@ -1,13 +1,16 @@
 @media(min-width: 500px) {
-  .zodiac-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+  .zodiac-container {
+    .zodiac-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
 
-    p {
-      font-size: 1.3rem;
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
+
 }
 
 @media (min-width: 800px) {
@@ -15,7 +18,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    align-items: center;
+  }
+
+  .zodiac-name {
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      margin-right: 0.2rem;
+    }
   }
 
   .zodiac-stats {
@@ -46,5 +57,16 @@
   .main-content {
     max-width: 80%;
   }
+
+  .zodiac-container {
+
+    .zodiac-stats {
+      p {
+        line-height: 3.5;
+        font-size: 3rem;
+      }
+    }
+  }
+
 
 }

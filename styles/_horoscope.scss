@@ -31,6 +31,7 @@ select {
   img {
     border: 2px solid gold;
     margin-bottom: 2rem;
+
   }
 
   .zodiac-traits {
@@ -40,8 +41,8 @@ select {
       font-size: 1.2rem;
     }
   }
-
 }
+
 
 .zodiac-personality {
   text-align: center;
@@ -68,9 +69,15 @@ select {
 
 .zodiac-name {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-family: 'PT Serif',
     serif;
+  text-align: center;
+
+  img {
+    border: none;
+    width: 40px;
+  }
 
   h3 {
     &::first-letter {
