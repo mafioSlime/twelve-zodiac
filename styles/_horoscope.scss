@@ -17,10 +17,12 @@ label {
 select {
   font-size: 1.1rem;
   font-family: sans-serif;
-  font-weight: 700;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 1rem;
   margin: auto;
   text-align: center;
+  background-color: purple;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 .zodiac-container {
@@ -31,7 +33,7 @@ select {
   img {
     border: 2px solid gold;
     margin-bottom: 2rem;
-
+    animation: entrance 0.3s ease-in;
   }
 
   .zodiac-traits {
@@ -73,6 +75,7 @@ select {
   font-family: 'PT Serif',
     serif;
   text-align: center;
+  animation: fade-in 0.3s ease-in;
 
   img {
     border: none;
@@ -86,4 +89,42 @@ select {
     }
   }
 
+}
+
+.btn {
+  padding: 0.4rem;
+  background-color: purple;
+  color: #fff;
+  display: block;
+  margin: 0.5rem auto;
+  display: inline-block;
+  width: 145px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.zodiac-stats {
+  animation: fade-in 0.3s ease-in;
+}
+
+
+
+@keyframes fade-in {
+  from {
+    transform: translateX(600px)
+  }
+
+  to {
+    transform: translateX(0px)
+  }
+}
+
+@keyframes entrance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

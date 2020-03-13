@@ -1,6 +1,7 @@
 const resultContainer = document.querySelector(".result-container");
 const option = document.querySelector("#zodiac-option");
 const optionValue = document.querySelectorAll("option");
+const btn = document.querySelector(".btn");
 
 const aries = {
   sign: "Aries",
@@ -253,6 +254,7 @@ const selectSign = () => {
   }
 };
 
-optionValue.forEach(each => {
-  each.addEventListener("click", selectSign);
-});
+btn.addEventListener('click', selectSign)
+// optionValue.forEach(each => {
+//   each.addEventListener("click", selectSign);
+// });
